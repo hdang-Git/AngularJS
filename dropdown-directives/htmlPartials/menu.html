@@ -1,0 +1,40 @@
+<div class="dropdown-list">
+    <button class="button">Dropdown1</button>
+    <ul>
+        <li><a ng-click="downloadCanvas('base',1, 'png')">Menu Item 1</a></li>
+        <li><a ng-click="downloadCanvas('base',1, 'png')">Menu Item 2</a></li>
+        <li><a ng-click="downloadCanvas('base',1, 'png')">Menu Item 3</a></li>
+    </ul>
+</div>
+
+<div class="dropdown-list">
+    <button class="button">Dropdown1</button>
+    <ul>
+        <li ng-repeat='ext in extensions'><a ng-click="downloadCanvas('base',1, 'png')">Menu Item 1 {{ext}}</a></li>
+    </ul>
+</div>
+
+<dropdown-List class="dropdown-list"></dropdown-List>
+
+<!--
+
+
+<div class="dropdown-list">
+    <button class="button">Dropdown2</button>
+    <ul>
+        <li><a ng-click="dropdownMessage(1)">Menu Item 1</a></li>
+        <li><a ng-click="dropdownMessage(2)">Menu Item 2</a></li>
+        <li><a ng-click="dropdownMessage(3)">Menu Item 3</a></li>
+        <li><a ng-click="dropdownMessage(4)">Menu Item 4</a></li>
+    </ul>
+</div>
+-->
+<!--
+<ul>
+        <li><a id='png' ng-click="downloadCanvas('base',1, 'png')">Menu Item 1</a></li>
+        <li><a id='jpg' ng-click="downloadCanvas('base',2, 'jpg')">Menu Item 2</a></li>
+        <li><a id='pdf' ng-click="downloadCanvas('base',3, 'pdf')">Menu Item 3</a></li>
+        <li><a id='svg' ng-click="downloadCanvas('base',4, 'svg')">Menu Item 4</a></li>
+    </ul>
+
+-->

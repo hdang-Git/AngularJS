@@ -1,0 +1,10 @@
+<div class="dropdownlist">
+    <button class="button" ng-click="toggle = !toggle">Dropdown1</button>
+    <div ng-show="toggle" ng-repeat="ext in extensions">  <!--  data-ng-href="{{dataURL}} -->
+        <ul>
+            <li ng-click="downloadCanvas('base',1, ext)">
+                <a id={{ext}} data-ng-href="{{dataURL}}">{{ext}} format</a>
+            </li>
+        </ul>
+    </div>
+</div>
